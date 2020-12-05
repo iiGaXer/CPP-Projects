@@ -64,14 +64,14 @@ cout << "Comp choose ";
   if(user == computer){
     cout << "Draw Game\n";
   }
-  else if(user == 1 && computer == 2){
-    cout << "You Lose =)\n";
+  else if(user == 1 && computer == 3){
+    cout << "You Win! =)\n";
   }
-  else if(user == 3 && computer == 1){
-    cout << "You Lose =)\n";
+  else if(user == 3 && computer == 2){
+    cout << "You Win! =)\n";
   }
   else if(user == 2 && computer == 1){
-    cout << "You Lose =)\n";
+    cout << "You Win! =)\n";
   }
   else{
     cout << "Computer Wins!\n";
