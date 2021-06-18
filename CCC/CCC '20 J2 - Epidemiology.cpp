@@ -8,10 +8,10 @@ int main() {
     int R;
     int final_day;
     cin >> P >> N >> R;
-    while (P <= 10000000; && N <= P; && R <= 10) {
-        for (int final_day = P/N*R;) {
-         cout << final_day << endl;
-       }
+    while (P <= 10000000 && N <= P && R <= 10) {
+      for (int final_day = P/N*R;) {
+        cout << final_day << endl;
+      }
     }
 
 

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int main() { //
     int sum = 0;    
     //! ^(Above) The idea
     int telemarketer[4] = {};
