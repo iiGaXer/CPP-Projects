@@ -3,17 +3,20 @@
 using namespace std;
  
 int main() {
-    int P;
-    int N;
-    int R;
-    int final_day;
-    cin >> P >> N >> R;
-    while (P <= 10000000 && N <= P && R <= 10) {
-      for (int final_day = P/N*R;) {
-        cout << final_day << endl;
-      }
-    }
+  int P, N, R; 
+  int dn, count = 0;
+  int n_1;
+	cin >> P >> N >> R;
+	dn = N;
+	
+	while(N <= P){
+		n_1 = N;
+		N += dn * R;
+		dn = N - n_1;
+		count++;
+	}
 
-
+	cout << count << endl;
+	
   return 0;
 }

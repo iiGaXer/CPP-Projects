@@ -81,12 +81,39 @@ void postfix_operators() {
     cout << "Result of decremented: value = " << number << endl;
 
 }
-void prefix_operators() {
-    
+
+//? In this case, "switch()" function, enables you to check a particular expression, against countless
+//* -other "what ifs" that are defined as: "case (whatever):"
+//! They are well-suited to being used with enumerators.
+void switch_case() {
+    int num_1;
+    cout << "Please enter a number between 1-3!" << endl;
+    cin >> num_1;
+
+    switch(num_1) {
+        case 1:
+            cout << "Your number value is defined as 1! 1 = True! Valid!" << endl;
+            break;
+        
+        case 2:
+            cout << "Your number value is defined as 2! 2 is a even number!" << endl;
+            break;
+
+        case 3:
+            cout << "Your number value is defined as 3! 3 is a uneven number!" << endl;
+            break;
+
+        default:
+            cout << "Your number is either: NaN, Na, or not in-between the number range!" << endl;
+            cout << "Your number is therefore, Invalid! Please try again, later." << endl;
+
+    }
+
+
 
 }
 
 int main() {
-    postfix();
+    switch_case();
     return 0;
 }
