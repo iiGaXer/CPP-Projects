@@ -11,7 +11,7 @@ void static_array() {
 
     int Numbers [Array_length] = {100, 200, 300, 400, 500};
     for(int i=0; i < Array_length; i++) {
-        cout << Numbers[i] << " ";
+        cout << Numbers[i] << " "; 
     }
 
 }
@@ -114,9 +114,77 @@ void switch_case() {
 
 }
 
+//? This operator acts as a "if-else" operator
+//! This is a IMPORTANT operator!
+void if_else_operator() {
+    cout << "Enter 2 numbers." << endl;
+    int num_1;
+    int num_2;
+    cin >> num_1 >> num_2;
+
+    int added = (num_1 > num_2)? num_1 : num_2;
+    cout << "The greator of " << num_1 << " and " << num_2 << " is: " << added << endl;
+    
+}
+
+//? This is a loop in which can repreat EVERYTHING from inside the "start:" all the way to the end
+//* -(in which, you have to indent OUT OF to not do the "start" code). -You can also do "goto Start:"
+//* -to restart the whole OPERATION!
+//! Well suited for asking simulation game and other asking problems.
+void goto_and_start_loop() {
+
+    Start:
+        int num_1, num_2 = 0;
+
+        cout << "Enter 2 numbers of your choice." << endl;
+        cin >> num_1;
+        cin >> num_2;
+
+        cout << num_1 << " x " << num_2 << " = " << num_1 * num_2 << endl;
+        cout << num_1 << " + " << num_2 << " = " << num_1 + num_2 << endl;
+
+        cout << "Do you wish to perform another operation, (y/n)?" << endl;
+        char yes = 'y';
+        cin >> yes;
+
+        if (yes == 'y') {
+            goto Start;
+        } else {
+            cout << "Goodbye!" << endl;
+        }
+        
+}
+
+//? This is a loop in which, anything in the "do" loop, while keep doing until the condition in the
+//* -"while" loop is false! 
+//! Exactly like "while (condition)" for Python! Very useful! 
+void do_while_loop() {
+    char selection = 'q';
+
+    do {
+        int num_1, num_2 = 0;
+
+        cout << "Enter 2 numbers of your choice." << endl;
+        cin >> num_1;
+        cin >> num_2;
+
+        cout << num_1 << " x " << num_2 << " = " << num_1 * num_2 << endl;
+        cout << num_1 << " + " << num_2 << " = " << num_1 + num_2 << endl;
+
+        cout << "Press/write q to exit(q)! To recalculate, press/type anything other that q(q)!" << endl;
+
+        cin >> selection;
+
+
+    } while (selection != 'q');
+
+    cout << "Goodbye!" << endl;
+
+} \
+
 
 
 int main() {
-    switch_case();
+    do_while_loop();
     return 0;
 }

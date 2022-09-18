@@ -9,6 +9,9 @@ int main() {
     int digit_5 = number % 10;
     int digit_4 = number/100;
     digit_4 = digit_4 % 100;
+
+
+    cout << digit_4;
     // int digit_3 = number%10;
     // int digit_4 = number%1;
     // cout << "First digit" << digit << endl;

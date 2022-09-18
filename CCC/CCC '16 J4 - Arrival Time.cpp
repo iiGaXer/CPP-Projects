@@ -10,10 +10,10 @@ int main() {
 
     int time = hours*60+mins;
 
-    for(int i=240; i>0; time++) {
-        if (time>=7*60 && time<10*60)  {
+    for(int i=240; i > 0; time++) {
+        if (time >= 7 * 60 && time < 10 * 60)  {
             i--;
-        } else if (time>=15*60 && time<19*60) {
+        } else if (time >= 15 * 60 && time < 19 * 60) {
             i--;
         } else {
             i-=2;
